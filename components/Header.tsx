@@ -17,16 +17,20 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center cursor-pointer" onClick={() => setCurrentPage(Page.Home)}>
-            <svg className="h-12 w-auto" viewBox="0 0 150 45">
-                <text x="0" y="30" fontFamily="sans-serif" fontSize="32" fontWeight="bold" fill="#374151">
-                    Uni
-                </text>
+            <svg className="h-12 w-auto" viewBox="0 0 155 45">
+                <text x="0" y="30" fontFamily="sans-serif" fontSize="32" fontWeight="bold" fill="#374151">Uni</text>
                 <text x="50" y="30" fontFamily="sans-serif" fontSize="32" fontWeight="bold" fill="#374151">M</text>
-                <text x="110" y="30" fontFamily="sans-serif" fontSize="32" fontWeight="bold" fill="#374151">P</text>
                 <g>
-                    <text x="80" y="30" fontFamily="sans-serif" fontSize="32" fontWeight="bold" fill="#4285F4">A</text>
+                    <text x="75" y="30" fontFamily="sans-serif" fontSize="32" fontWeight="bold" fill="#4285F4">A</text>
                     <circle cx="90" cy="18" r="15" stroke="#4285F4" strokeWidth="3" fill="none"/>
                     <line x1="102" y1="30" x2="109" y2="37" stroke="#4285F4" strokeWidth="5" strokeLinecap="round"/>
+                </g>
+                <g>
+                    <text x="115" y="30" fontFamily="sans-serif" fontSize="32" fontWeight="bold" fill="#374151">P</text>
+                    {/* The Ray/Sparkle to the North-East of P */}
+                    <g transform="translate(138, 8)" fill="#F59E0B">
+                        <path d="M 0 -5 L 1.5 -1.5 L 5 0 L 1.5 1.5 L 0 5 L -1.5 1.5 L -5 0 L -1.5 -1.5 Z" />
+                    </g>
                 </g>
             </svg>
           </div>

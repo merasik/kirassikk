@@ -449,6 +449,7 @@ const CoursePage: React.FC = () => {
                 <div className="mb-8 p-4 bg-blue-100 border border-blue-200 text-blue-800 rounded-2xl text-center shadow-sm">
                     <p>
                         <strong className="font-semibold">Только первая тема доступна для гостей.</strong>{' '}
+                        {/* Fix: provide the page argument to setCurrentPage */}
                         <a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage(Page.Onboarding); }} className="font-semibold underline hover:text-blue-600">
                             Зарегистрируйтесь
                         </a>
